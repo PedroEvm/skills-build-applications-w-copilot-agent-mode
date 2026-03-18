@@ -1,0 +1,37 @@
+:root {
+  --app-bg-a: #f0f9ff;
+  --app-bg-b: #ecfeff;
+  --app-bg-c: #fdf4ff;
+  --app-nav-a: #0f766e;
+  --app-nav-b: #1d4ed8;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(56, 189, 248, 0.2) 0, transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(45, 212, 191, 0.2) 0, transparent 35%),
+    linear-gradient(135deg, var(--app-bg-a), var(--app-bg-b) 52%, var(--app-bg-c));
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-nav {
+  background: linear-gradient(135deg, var(--app-nav-a), var(--app-nav-b));
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+pre {
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.modal-backdrop {
+  cursor: pointer;
+}
